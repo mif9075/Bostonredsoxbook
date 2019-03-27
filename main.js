@@ -24,5 +24,15 @@ function addClick(selector, func){
 }
 
 function clearList(){
+    event.preventDefault();
+    removeAllChildrenOfOl();
+}
 
+function removeAllChildrenOfOl() {
+
+    const ol = document.querySelector('#list');
+
+    while(ol.hasChildNodes()) {
+        ol.removeChild(ol.firstChild);
+    }
 }
