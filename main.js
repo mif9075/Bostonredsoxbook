@@ -18,9 +18,9 @@ function displayAll(event){
     
     for (let i=0; i < data.length; i++){
     const newLi = document.createElement('li');
-    newLi.innerText = data[i];
-    const ol = document.querySelector('#list');
-    ol.appendChild(newLi);
+    newLi.innerText = data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
+    const ul = document.querySelector('#list');
+    ul.appendChild(newLi);
 }
 }
 
