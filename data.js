@@ -1,4 +1,5 @@
 const data = [
+    //Pitchers
     {
         position : 'pitcher',
         number : 32,		
@@ -97,13 +98,21 @@ const data = [
         bat : 'right',
         throw : 'right',
     },
-
-{position: catchers
-
-#	 	Name	B/T	Ht	Wt	DOB
-23		Blake Swihart	S/R	6'1"	200lbs	4/3/92
-7		Christian Vazquez	R/R	5'9"	195lbs	8/21/90
-},
+    //Catchers
+    {
+        position : 'catcher',
+        number : 23,		
+        name : 'Blake Swihart',
+        bat : 'right',
+        throw : 'right',
+    },
+    {
+        position : 'catcher',
+        number : 7,		
+        name : 'Christian Vazquez',
+        bat : 'right',
+        throw : 'right',
+    },
 
 {position: infield
 
