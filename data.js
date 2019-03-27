@@ -1,5 +1,5 @@
 const data = [
-    //Pitchers
+        //Pitchers
     {
         position : 'pitcher',
         number : 32,		
@@ -98,7 +98,7 @@ const data = [
         bat : 'right',
         throw : 'right',
     },
-    //Catchers
+        //Catchers
     {
         position : 'catcher',
         number : 23,		
@@ -113,26 +113,75 @@ const data = [
         bat : 'right',
         throw : 'right',
     },
-
-{position: infield
-
-    #	 	Name	B/T	Ht	Wt	DOB
-    2		Xander Bogaerts	R/R	6'1"	210lbs	10/1/92
-    11		Rafael Devers	L/R	6'0"	237lbs	10/24/96
-    40		Marco Hernandez	L/R	6'0"	200lbs	9/6/92
-    12		Brock Holt	L/R	5'10"	180lbs	6/11/88
-    18		Mitch Moreland	L/L	6'2"	230lbs	9/6/85
-    36		Eduardo Nunez	R/R	6'0"	195lbs	6/15/87
-    25		Steve Pearce	R/R	5'11"	200lbs	4/13/83
-    15		Dustin Pedroia	R/R	5'9"	175lbs	8/17/83
-    59		Sam Travis	R/R	6'0"	205lbs	8/27/93
-
-},
-{position: outfield
-    16		Andrew Benintendi	L/L	5'10"	170lbs	7/6/94
-    50		Mookie Betts	R/R	5'9"	180lbs	10/7/92
-    19		Jackie Bradley Jr.	L/R	5'10"	200lbs	4/19/90
-    28		J.D. Martinez	R/R	6'3"	220lbs	8/21/87
+        //Infielder
+    {
+        position : 'infielder',
+        number : 2,		
+        name : 'Xander Bogaerts',
+        bat : 'right',
+        throw : 'right',
+    },
+    {
+        position : 'infielder',
+        number : 11,		
+        name : 'Rafael Devers',
+        bat : 'left',
+        throw : 'right',
+    },
+    {
+        position : 'infielder',
+        number : 40,		
+        name : 'Marco Hernandez',
+        bat : 'left',
+        throw : 'right',
+    },
+    {
+        position : 'infielder',
+        number : 12,		
+        name : 'Brock Holt',
+        bat : 'left',
+        throw : 'right',
+    },
+    {
+        position : 'infielder',
+        number : 18,		
+        name : 'Mitch Moreland',
+        bat : 'left',
+        throw : 'left',
+    },
+    {
+        position : 'infielder',
+        number : 36,		
+        name : 'Eduardo Nunez',
+        bat : 'right',
+        throw : 'right',
+    },    
+    {
+        position : 'infielder',
+        number : 25,		
+        name : 'Steve Pearce',
+        bat : 'right',
+        throw : 'right',
+    },    
+    {
+        position : 'infielder',
+        number : 15,		
+        name : 'Dustin Pedroia',
+        bat : 'right',
+        throw : 'right',
+    },    
+    {
+        position : 'infielder',
+        number : 59,		
+        name : 'Sam Travis',
+        bat : 'right',
+        throw : 'right',
+    },   
+{position: outfielder
+    16		Andrew Benintendi	L/L	
+    50		Mookie Betts	R/R	
+    19		Jackie Bradley Jr.	L/R	
+    28		J.D. Martinez	R/R	
 
 
 },    
