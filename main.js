@@ -3,6 +3,7 @@ window.onload = init;
 function init(){
     addClick('#search', search);
     addClick('#display-all', displayAll);
+    addClick('#clear-list',clearList)
 }
 
 function search(event){
@@ -14,6 +15,13 @@ function search(event){
 
 function displayAll(event){
     event.preventDefault();
+    
+    for (let i=0; i < data.length; i++){
+    const newLi = document.createElement('li');
+    newLi.innerText = data[i];
+    const ol = document.querySelector('#list');
+    ol.appendChild(newLi);
+}
 }
 
 
