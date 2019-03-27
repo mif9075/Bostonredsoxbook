@@ -177,12 +177,34 @@ const data = [
         bat : 'right',
         throw : 'right',
     },   
-{position: outfielder
-    16		Andrew Benintendi	L/L	
-    50		Mookie Betts	R/R	
-    19		Jackie Bradley Jr.	L/R	
-    28		J.D. Martinez	R/R	
+        //Outfielder
+    {
+        position : 'outfielder',
+        number : 16,		
+        name : 'Andrew Benintendi',
+        bat : 'left',
+        throw : 'left',
+    },  
+    {
+        position : 'outfielder',
+        number : 50,		
+        name : 'Mookie Betts',
+        bat : 'right',
+        throw : 'right',
+    },  
+    {
+        position : 'outfielder',
+        number : 19,		
+        name : 'Jackie Bradley Jr.',
+        bat : 'left',
+        throw : 'right',
+    },  
+    {
+        position : 'outfielder',
+        number : 28,		
+        name : 'J.D. Martinez',
+        bat : 'right',
+        throw : 'right',
+    },  
 
-
-},    
 ]
