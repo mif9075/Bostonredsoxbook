@@ -9,19 +9,20 @@ function init(){
 function search(event){
     event.preventDefault();
     let newSearch = document.querySelector('#search-input').value;
-    document.querySelector('#search-input').value = '';
     console.log(newSearch);
-
-    // for (let i=0; i < data.length; i++){
-    let i=0;
-    if  (data[i].number = newSearch){
-        clearList();
-        const newLi = document.createElement('li');
-        newLi.innerText = data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
-        const ul = document.querySelector('#list');
-        ul.appendChild(newLi);
-        console.log(newLi);
+    
+    for (let i=0; i < data.length; i++){
+        if  (data[i].bat === newSearch  || data[i].throw === newSearch || data[i].name === newSearch){
+            console.log(data[i]);
+            clearList();
+            const ul = document.querySelector('#list');
+            const newLi = document.createElement('li');
+            newLi.innerText = data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
+            ul.appendChild(newLi);
+            // console.log(newLi);
+        }
     }
+    document.querySelector('#search-input').value = '';
 }
 
 function displayAll(event){
@@ -49,9 +50,9 @@ function clearList(){
 
 function removeAllChildrenOfOl() {
 
-    const ol = document.querySelector('#list');
+    const ul = document.querySelector('#list');
 
-    while(ol.hasChildNodes()) {
-        ol.removeChild(ol.firstChild);
+    while(ul.hasChildNodes()) {
+        ul.removeChild(ul.firstChild);
     }
 }
