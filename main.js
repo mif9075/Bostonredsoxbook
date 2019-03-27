@@ -8,9 +8,20 @@ function init(){
 
 function search(event){
     event.preventDefault();
-    const newSearch = document.querySelector('#search-input').value;
+    let newSearch = document.querySelector('#search-input').value;
     document.querySelector('#search-input').value = '';
     console.log(newSearch);
+
+    // for (let i=0; i < data.length; i++){
+    let i=0;
+    if  (data[i].number = newSearch){
+        clearList();
+        const newLi = document.createElement('li');
+        newLi.innerText = data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
+        const ul = document.querySelector('#list');
+        ul.appendChild(newLi);
+        console.log(newLi);
+    }
 }
 
 function displayAll(event){
