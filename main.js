@@ -47,6 +47,7 @@ function searchPitcher(event){
 
 function displayAll(event){
     event.preventDefault();
+    clearList();
     printDisplay();
 }
 
@@ -75,13 +76,16 @@ function printDisplay() {
     for (let i=0; i < data.length; i++){
         const newLi = document.createElement('li');
         const newLi2 = document.createElement('li');
-        const newLi3 = document.createElement('p');
-        newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number +  ", Bats: " + data[i].bat + ", Throw: " +data[i].throw;
+        const newLi3 = document.createElement('li');
+        const newLi4 = document.createElement('p');
+        newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number;
         newLi2.innerText = 'Name: ' + data[i].name;
+        newLi3.innerText = 'Bats: ' + data[i].bat + ', Throw: ' + data[i].throw;
         const ul = document.querySelector('#list');
         ul.appendChild(newLi2);
         ul.appendChild(newLi);
         ul.appendChild(newLi3);
+        ul.appendChild(newLi4);
         
 }
 }
@@ -89,11 +93,14 @@ function printDisplay() {
 function printSearch(i){
     const newLi = document.createElement('li');
     const newLi2 = document.createElement('li');
-    const newLi3 = document.createElement('p');
-    newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number +  ", Bats: " + data[i].bat + ", Throw: " +data[i].throw;
+    const newLi3 = document.createElement('li');
+    const newLi4 = document.createElement('p');
+    newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number;
     newLi2.innerText = 'Name: ' + data[i].name;
+    newLi3.innerText = "Bats: " + data[i].bat + ", Throw: " +data[i].throw
     const ul = document.querySelector('#list');
     ul.appendChild(newLi2);
-    ul.appendChild(newLi);
     ul.appendChild(newLi3);
+    ul.appendChild(newLi);
+    ul.appendChild(newLi4);
 }
