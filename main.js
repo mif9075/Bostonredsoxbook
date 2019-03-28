@@ -74,15 +74,26 @@ function removeAllChildrenOfOl() {
 function printDisplay() {
     for (let i=0; i < data.length; i++){
         const newLi = document.createElement('li');
-        newLi.innerText = data[i].position + ", " + data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
+        const newLi2 = document.createElement('li');
+        const newLi3 = document.createElement('p');
+        newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number +  ", Bats: " + data[i].bat + ", Throw: " +data[i].throw;
+        newLi2.innerText = 'Name: ' + data[i].name;
         const ul = document.querySelector('#list');
+        ul.appendChild(newLi2);
         ul.appendChild(newLi);
+        ul.appendChild(newLi3);
+        
 }
 }
 
 function printSearch(i){
     const newLi = document.createElement('li');
-            newLi.innerText = data[i].position + ", " + data[i].number + ", " + data[i].name + ", " + data[i].bat + ", " +data[i].throw;
-            const ul = document.querySelector('#list');
-            ul.appendChild(newLi);
+    const newLi2 = document.createElement('li');
+    const newLi3 = document.createElement('p');
+    newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number +  ", Bats: " + data[i].bat + ", Throw: " +data[i].throw;
+    newLi2.innerText = 'Name: ' + data[i].name;
+    const ul = document.querySelector('#list');
+    ul.appendChild(newLi2);
+    ul.appendChild(newLi);
+    ul.appendChild(newLi3);
 }
