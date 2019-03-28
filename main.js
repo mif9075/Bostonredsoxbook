@@ -14,7 +14,7 @@ function searchAll(event){
     
     for (let i=0; i < data.length; i++){
         if  (data[i].bat === newSearch && data[i].throw === newSearch){
-            printSearch(i);
+            printSearchAll(i);
         }
         }
     document.querySelector('#search-input').value = '';
@@ -26,7 +26,7 @@ function searchHitter(event){
     
     for (let i=0; i < data.length; i++){
         if  (data[i].bat === newSearch && data[i].position !== 'pitcher'){
-            printSearch(i);
+            printSearchHitter(i);
         }
         }
     document.querySelector('#search-input').value = '';
@@ -38,7 +38,7 @@ function searchPitcher(event){
     
     for (let i=0; i < data.length; i++){
         if  (data[i].throw === newSearch && data[i].position === 'pitcher'){
-            printSearch(i);
+            printSearchPitcher(i);
         }
         }
     document.querySelector('#search-input').value = '';
@@ -90,7 +90,37 @@ function printDisplay() {
 }
 }
 
-function printSearch(i){
+function printSearchPitcher(i){
+    const newLi = document.createElement('li');
+    const newLi2 = document.createElement('li');
+    const newLi3 = document.createElement('li');
+    const newLi4 = document.createElement('p');
+    newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number;
+    newLi2.innerText = 'Name: ' + data[i].name;
+    newLi3.innerText = 'Throw: ' + data[i].throw;
+    const ul = document.querySelector('#list');
+    ul.appendChild(newLi2);
+    ul.appendChild(newLi3);
+    ul.appendChild(newLi);
+    ul.appendChild(newLi4);
+}
+
+function printSearchHitter(i){
+    const newLi = document.createElement('li');
+    const newLi2 = document.createElement('li');
+    const newLi3 = document.createElement('li');
+    const newLi4 = document.createElement('p');
+    newLi.innerText = 'Position: ' + data[i].position + ", Number: " + data[i].number;
+    newLi2.innerText = 'Name: ' + data[i].name;
+    newLi3.innerText = "Bats: " + data[i].bat;
+    const ul = document.querySelector('#list');
+    ul.appendChild(newLi2);
+    ul.appendChild(newLi3);
+    ul.appendChild(newLi);
+    ul.appendChild(newLi4);
+}
+
+function printSearchAll(i){
     const newLi = document.createElement('li');
     const newLi2 = document.createElement('li');
     const newLi3 = document.createElement('li');
